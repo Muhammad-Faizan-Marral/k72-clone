@@ -116,7 +116,7 @@ const FullScreenNav = () => {
         </div>
         <div className=" py-36">
 
-            <a href="/Projects">
+            <a href="/#Projects">
             <div className="link origin-top relative border-t-1 border-white">
             <h1 className="font-[font2] text-5xl lg:text-[8vw] text-center lg:leading-[0.8] lg:pt-10 pt-3 uppercase">
               Projets
@@ -162,7 +162,7 @@ const FullScreenNav = () => {
           </div>  
             </a>
 
-         <a href="/agence">
+         <a href="/#agence">
           <div className="link origin-top relative border-t-1 border-white">
             <h1 className="font-[font2] text-5xl lg:text-[8vw] text-center lg:leading-[0.8] lg:pt-10 pt-3 uppercase">
               Agence
@@ -208,7 +208,7 @@ const FullScreenNav = () => {
           </div>
           </a>
 
-       <a href="/contact">
+       <a href="/#contact">
           <div className="link origin-top relative border-t-1 border-white">
             <h1 className="font-[font2] text-5xl lg:text-[8vw] text-center lg:leading-[0.8] lg:pt-10 pt-3 uppercase">
               Contact

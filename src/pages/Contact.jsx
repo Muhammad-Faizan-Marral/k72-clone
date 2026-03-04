@@ -58,7 +58,7 @@ const Contact = () => {
     ScrollTrigger.create({
       start: 0,
       end: "max",
-      onUpdate(self) {
+      onUpdate() {
 
         const scroll = lenis.scroll;
 
