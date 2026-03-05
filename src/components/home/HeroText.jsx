@@ -29,7 +29,7 @@ const HeroText = ({ smallVideoRef, setSmallReady }) => {
             muted
             playsInline
             onCanPlayThrough={() => setSmallReady(true)}
-             src="/public/homeAssests/homeassests.mp4"
+             src="/homeAssests/homeassests.mp4"
           />
         </div>
 

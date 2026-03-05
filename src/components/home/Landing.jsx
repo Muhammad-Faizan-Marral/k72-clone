@@ -10,7 +10,7 @@ const Landing = ({bgVideoRef,bgReady}) => {
         onCanPlayThrough={()=>bgReady(true)}
         loop
         muted
-        src="/public/homeAssests/homeassests.mp4"
+        src="/homeAssests/homeassests.mp4"
       ></video>
     </div>
   );

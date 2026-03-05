@@ -37,7 +37,7 @@ const Footer = () => {
       text-6xl md:text-4xl lg:text-7xl
       font-medium tracking-wider"
           >
-            <a href="/#contact">Contact</a>
+            <a href="/contact">Contact</a>
             <span className="text-xl md:text-3xl lg:text-6xl font-bold">♡</span>
           </div>
         </div>
