@@ -15,12 +15,14 @@ const App = () => {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    setLoading(true);
-    const timer = setTimeout(() => {
+    const handleLoad = () => {
       setLoading(false);
-    }, 1000);
-    return () => clearTimeout(timer);
-  }, [location]);
+    };
+
+    window.addEventListener("load", handleLoad);
+
+    return () => window.removeEventListener("load", handleLoad);
+  }, []);
 
   return (
     <NavContext>
@@ -29,12 +31,11 @@ const App = () => {
       <div className="overflow-x-hidden">
         <Navbar />
         <FullScreenNav />
-        <Routes  location={location}>
+        <Routes location={location}>
           <Route path="/" element={<Home />} />
           <Route path="/agence" element={<Agence />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
-      
         </Routes>
       </div>
     </NavContext>

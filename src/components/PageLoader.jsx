@@ -22,7 +22,7 @@ const PageLoader = () => {
   );
 
   return (
-    <div className="relative bg-black h-screen w-full z-50">
+    <div className="fixed bg-black h-screen w-full z-50">
       {/* 🔹 Top Left Logo */}
       <div className="absolute top-6 left-6 lg:w-36 w-24 z-30 ">
       <div className="lg:p-5 p-2 ">
