@@ -1,14 +1,14 @@
 import { useContext, useRef } from "react";
 import { NavbarColorContext, NavbarContext } from "../context/NavContext";
-
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const navGreenRef = useRef(null);
   const [navOpen, setNavOpen] = useContext(NavbarContext);
   const [navColor, setNavColor] = useContext(NavbarColorContext);
 
   return (
-    <div className="z-30 flex fixed top-0  w-full items-start justify-between">
-    <a href="/">
+    <div className="z-30 flex fixed top-0 w-full items-start justify-between">
+    <Link href="/">
       <div className="lg:p-5 p-2 ">
         <div className="lg:w-36 w-24">
           <svg
@@ -24,7 +24,7 @@ const Navbar = () => {
           </svg>
         </div>
       </div>
-    </a>
+    </Link>
       <div
         onClick={() => {
           setNavOpen(true);
