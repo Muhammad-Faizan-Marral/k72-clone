@@ -12,9 +12,6 @@ const Contact = () => {
   useEffect(() => {
   document.body.style.overflow = 'hidden';
 
-    // =====================
-    // LENIS SMOOTH SCROLL
-    // =====================
     const lenis = new Lenis({
       smooth: true,
       lerp: 0.08,
@@ -27,7 +24,6 @@ const Contact = () => {
 
     requestAnimationFrame(raf);
 
-    // GSAP sync with Lenis
     lenis.on("scroll", ScrollTrigger.update);
 
     ScrollTrigger.scrollerProxy(document.body, {
@@ -49,12 +45,8 @@ const Contact = () => {
     const totalHeight =
       containerRef.current.scrollHeight / 3;
 
-    // Start from middle
     lenis.scrollTo(totalHeight, { immediate: true });
 
-    // =====================
-    // INFINITE LOOP
-    // =====================
     ScrollTrigger.create({
       start: 0,
       end: "max",
@@ -79,7 +71,7 @@ const Contact = () => {
     ScrollTrigger.refresh();
 
    return () => {
-    document.body.style.overflow = '';  // cleanup
+    document.body.style.overflow = ''; 
     lenis.destroy();
     ScrollTrigger.killAll();
   };
