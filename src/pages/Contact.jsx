@@ -67,7 +67,6 @@ const Contact = () => {
         }
       }
     });
-
     ScrollTrigger.refresh();
 
    return () => {
